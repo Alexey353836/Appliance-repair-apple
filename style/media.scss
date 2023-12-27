@@ -5,12 +5,14 @@
 
     // header__row
     .header__row{
-        margin: 0 20px;
-        padding: 14px 20px;
+        padding: 14px 30px;
     }
 }
 @media screen and (max-width: 600px){
     // header__row
+    .header__row{
+        padding: 14px 20px;
+    }
     .img__logo {
         height: 20px;
     }
@@ -19,5 +21,11 @@
     }
     .nav__burger{
         display: block;
+    }
+}
+@media screen and (max-width: 400px){
+       // header__row
+       .header__row{
+        padding: 14px 10px;
     }
 }
