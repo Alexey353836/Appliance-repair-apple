@@ -1,0 +1,23 @@
+@media screen and (max-width: 1100px) {
+    .main-container {
+        max-width: 800px;
+    }
+
+    // header__row
+    .header__row{
+        margin: 0 20px;
+        padding: 14px 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    // header__row
+    .img__logo {
+        height: 20px;
+    }
+    .header__box-nav {
+        display: none;
+    }
+    .nav__burger{
+        display: block;
+    }
+}
