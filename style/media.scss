@@ -7,6 +7,10 @@
     .header__row{
         padding: 14px 30px;
     }
+    // header__content
+    .headr__title {
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 600px){
     // header__row
@@ -21,6 +25,33 @@
     }
     .nav__burger{
         display: block;
+    }
+    // header__content
+    .header__content {
+        margin-top: 41px;
+      }
+    .headr__title {
+        font-size: 28px;
+    }
+    .header__text {
+        font-size: 14px;
+        line-height: 22px;
+    
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+    .btn {
+        font-size: 14px;
+        font-weight: 400;
+    
+        width: 178px;
+        height: 44px;
+        border-radius: 5px;
+        background: #25428E;
+    }
+    .header__img {
+        margin-top: 74px;
+        max-width: 313px;
     }
 }
 @media screen and (max-width: 400px){
