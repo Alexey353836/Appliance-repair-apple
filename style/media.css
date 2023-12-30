@@ -17,6 +17,26 @@
   .features__text {
     max-width: 237px;
   }
+  .pricing__items {
+    display: grid;
+    grid-template-areas: "f f" "e i";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+    margin-top: 61px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .pricing__items {
+    display: grid;
+    grid-template-areas: "e" "f" "i";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+    margin-top: 61px;
+  }
 }
 @media screen and (max-width: 600px) {
   .header__row {
@@ -55,6 +75,10 @@
     margin-top: 74px;
     max-width: 313px;
   }
+  .pricing__items {
+    gap: 30px;
+    margin-top: 61px;
+  }
   .features {
     display: grid;
     grid-template-areas: "a" "b" "c" "d";
@@ -62,6 +86,58 @@
     max-width: 1200px;
     row-gap: 98px;
     margin: 0;
+  }
+  .pricing__content {
+    padding: 48px 20px 72px;
+  }
+  .pricing__title {
+    font-size: 38px;
+  }
+  .pricing__hr {
+    margin: 19px auto 0;
+  }
+  .pricing__items {
+    margin-top: 45px;
+  }
+  .pricing_item {
+    padding: 25px 28px 57px;
+  }
+  .pricing_item-name {
+    font-size: 20px;
+  }
+  .pricing_item-pricing {
+    font-size: 38px;
+    margin-top: 11px;
+  }
+  .pricing_item-notebock {
+    margin: 21px 0 34px;
+  }
+  .pricing_item-li {
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 21px;
+  }
+  .pricing__item-button {
+    padding: 11px 33px;
+    font-size: 13px;
+  }
+  .pricing_item-main {
+    padding: 38px 25px 56px;
+  }
+  .pricing_item-name-main {
+    font-size: 19px;
+  }
+  .pricing_item-pricing-main {
+    font-size: 38px;
+    margin-top: 16px;
+  }
+  .pricing_item-notebock {
+    margin: 21px 0 25px;
+  }
+  .pricing_item-li-main {
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 21px;
   }
 }
 @media screen and (max-width: 400px) {

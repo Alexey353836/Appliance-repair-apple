@@ -18,6 +18,7 @@ a{
     --gradient1: linear-gradient(96deg, #EA3B65 7.69%, rgba(144, 53, 199, 0.64) 93.65%);
     --mainBlue:  #25428E;
     --backgroundBlue:  #0a4cf1;
+    --text: #514949;
 }
 img{
    display: block;
@@ -184,7 +185,7 @@ body{
     margin-top: 18px;
 }
 .features__text {
-    color: #514949;
+    color: var(--text);
     text-align: center;;
     font-size: 16px;
     font-weight: 400;
@@ -193,6 +194,150 @@ body{
     margin-top: 25px;
     max-width: 278px;
 }
+
+// Pricing
+.pricing {
+   background: var(--gradient1)
+}
+.pricing__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 86px 20px 116px;
+}
+.pricing__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+}
+.pricing__hr {
+    width: 40px;
+    height: 1px;
+    background: #FFF;
+    margin: 28px auto 0;
+}
+.pricing__items {
+    display: grid;
+    grid-template-areas: 
+    "e f i";
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 61px;
+}
+.pricing_item-1{
+    grid-area: e;
+}
+.pricing_item-main-1{
+    grid-area: f;
+}
+.pricing_item-2{
+    grid-area: i;
+}
+.pricing_item {
+    max-width: 390px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 1px 11px 0px rgba(43, 40, 40, 0.07);
+    padding: 35px 31px 55px;
+}
+.pricing_item-name {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.pricing_item-pricing {
+    color: #EA3B65;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+
+    margin-top: 13px;
+}
+.pricing_item-notebock {
+    list-style: inside;
+    margin: 26px 0 30px;
+}
+.pricing_item-li {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26.429px;
+    margin-top: 26px;
+}
+.pricing__button-box{
+    display: flex;
+    justify-content: center;
+}
+.pricing__item-button {
+   padding: 14px 40px;
+   
+
+    color: #25428E;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+
+    background-color: #FFF;
+    border: 1px solid var(--mainBlue);
+    border-radius: 5px;
+    transition: 0.3s;
+    &:hover{
+        color: #FFF;
+        background-color: var(--backgroundBlue);
+        border: #fff;
+    }
+    &:active{
+        transform: scale(1.1);
+    }
+}
+
+.pricing_item-main {
+    max-width: 390px;
+    border-radius: 5px;
+    background: var(--mainBlue);
+    box-shadow: 0px 1px 11px 0px rgba(43, 40, 40, 0.07);
+    padding: 47px 31px 55px;
+}
+.pricing_item-name-main {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: #FFF;
+}
+.pricing_item-pricing-main {
+    color: #EA3B65;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    margin-top: 13px;
+
+    color: #fff;
+    margin-top: 20px;
+}
+.pricing_item-notebock {
+    list-style: inside;
+    margin: 26px 0 30px;
+
+    margin: 26px 0 35px;
+}
+.pricing_item-li-main {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26.429px;
+    margin-top: 26px;
+
+    color: #FFF;
+}
+
+
+
 
 
 
