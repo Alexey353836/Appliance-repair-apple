@@ -367,7 +367,6 @@ body {
   grid-template-areas: "k l";
   gap: 30px;
   max-width: 1334px;
-  width: 100%;
   margin: 91px auto;
   padding: 0 20px;
 }
@@ -413,8 +412,7 @@ body {
 
 .feedback__box-2 {
   grid-area: l;
-  width: 100%;
-  max-width: 486px;
+  max-width: 496px;
   padding: 63px 45px 48px;
   border: #969696 solid 1px;
   border-top: var(--mainBlue) solid 10px;
@@ -426,9 +424,10 @@ body {
 .feedback__ul {
   display: grid;
   gap: 27px;
+  max-width: 396px;
 }
 .feedback__ul input {
-  width: 396px;
+  width: 100%;
   background: #F6F6F6;
   padding: 20px 17px 20px;
   color: var(--text);
@@ -438,7 +437,7 @@ body {
   font-weight: 400;
 }
 .feedback__ul textarea {
-  width: 396px;
+  width: 100%;
   min-height: 143px;
   padding: 20px 28px;
   font-size: 19px;
