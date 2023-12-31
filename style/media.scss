@@ -230,6 +230,16 @@
             font-size: 17px;
         }
      }
+
+     // footer
+.footer {
+    background: #2B2626;
+    padding: 21px 10px 21px;
+}
+.footer_text {
+    font-size: 12px;
+    line-height: 20px;
+}
 }
 @media screen and (max-width: 400px){
        // header__row

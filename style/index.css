@@ -468,4 +468,21 @@ body {
 }
 .send:active {
   transform: scale(1.1);
+}
+
+.footer {
+  background: #2B2626;
+  padding: 31px 30px 31px;
+}
+
+.footer_text {
+  color: #D9D8D8;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.125px;
+}
+.footer_text span {
+  font-weight: 700;
+  line-height: 165.182%;
 }/*# sourceMappingURL=index.css.map */
