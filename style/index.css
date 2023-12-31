@@ -440,6 +440,7 @@ body {
 .feedback__ul textarea {
   width: 396px;
   min-height: 143px;
+  padding: 20px 28px;
   font-size: 19px;
   font-weight: 400;
 }
