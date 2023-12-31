@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600&family=Mulish:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,400;1,600&family=Open+Sans:wght@300;400;500;600;700&family=PT+Sans:wght@700&family=Playfair+Display&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600&family=Mulish:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,400;1,600&family=Open+Sans:wght@300;400;500;600;700&family=PT+Sans:wght@700&family=Playfair+Display&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-<title>Appliance repair apple</title>
-<link rel="stylesheet" href="style/index.css">
-<link rel="stylesheet" href="style/media.css">
-
+    <title>Appliance repair apple</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 <body>
 
@@ -155,7 +154,36 @@
             </div>
         </section>
 
-    </div>
+        <!-- feedback -->
+        <section class="feedback">
+            <div class="feedback__box-1">
+                <div class="feedback__text">
+                    <h2 class="feedback__title">
+                        Feedback
+                    </h2>
+                    <hr class="feedback__line">
+                    <p class="feedback_subtitle">
+                        If you have any questions or would like to order our services from us, please fill out the form on the right. Our managers work around the clock and will call you back during the day.
+                    </p>
+                </div>
+                <img src="img/feedback.jpg" alt="feedback" class="feedback__img">
+            </div>
+            <div class="feedback__box-2">
+                <form action="#" method="post" enctype="multipart/form-data" class="feedback__form">
+                    <ul class="feedback__ul">
+                        <li><input tabindex="1" placeholder="Your name*" type="text" name="name"></li>
+                        <li><input tabindex="2" placeholder="Your phone*" type="tel" name="tel"></li>
+                        <li><input tabindex="3" placeholder="Your email" type="email" name="emeil"></li>
+                        <li><textarea tabindex="4" placeholder="Comment" name="text"></textarea></li>
+                    </ul>
+                    <div class="feedback__boxBtn">
+                        <button tabindex="5" type="reset" class="send">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
+    </div>
+ 
 </body>
 </html>

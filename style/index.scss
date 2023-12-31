@@ -15,7 +15,6 @@ a{
     text-decoration: none;
 }
 :root{
-    --gradient1: linear-gradient(96deg, #EA3B65 7.69%, rgba(144, 53, 199, 0.64) 93.65%);
     --mainBlue:  #25428E;
     --backgroundBlue:  #0a4cf1;
     --text: #514949;
@@ -32,6 +31,31 @@ button{
 body{
     font-family: 'Open Sans', sans-serif;
 }
+$gradient1: linear-gradient(96deg, #EA3B65 7.69%, rgba(144, 53, 199, 0.64) 93.65%);
+@mixin title{
+    color: #FFF;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+}
+@mixin btn{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+
+    width: 212px;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--mainBlue);
+    transition: 0.3s;
+    &:hover{
+        background: var(--backgroundBlue)
+    }
+    &:active{
+        transform: scale(1.1);
+    }
+}
 .main-container {
     max-width: 1600px;
     min-width: 300px;
@@ -42,7 +66,7 @@ body{
 
 // header
 .header {
-    background: var(--gradient1);
+    background: $gradient1;
 }
 // header__row
 .header__row{
@@ -121,22 +145,7 @@ body{
     max-width: 440px;
 }
 .btn {
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-
-    width: 212px;
-    height: 50px;
-    border-radius: 5px;
-    background: var(--mainBlue);
-    transition: 0.3s;
-    &:hover{
-        background: var(--backgroundBlue)
-    }
-    &:active{
-        transform: scale(1.1);
-    }
+    @include btn();
 }
 .header__img {
     margin-top: 89px;
@@ -190,14 +199,14 @@ body{
     font-size: 16px;
     font-weight: 400;
     line-height: 27.229px;
-
+   
     margin-top: 25px;
     max-width: 278px;
 }
 
 // Pricing
 .pricing {
-   background: var(--gradient1)
+   background: $gradient1;
 }
 .pricing__content {
     max-width: 1200px;
@@ -205,10 +214,7 @@ body{
     padding: 86px 20px 116px;
 }
 .pricing__title {
-    color: #FFF;
-    text-align: center;
-    font-size: 46px;
-    font-weight: 300;
+    @include title();
 }
 .pricing__hr {
     width: 40px;
@@ -235,6 +241,7 @@ body{
     grid-area: i;
 }
 .pricing_item {
+    width: 100%;
     max-width: 390px;
     border-radius: 5px;
     background: #FFF;
@@ -293,8 +300,8 @@ body{
         transform: scale(1.1);
     }
 }
-
 .pricing_item-main {
+    width: 100%;
     max-width: 390px;
     border-radius: 5px;
     background: var(--mainBlue);
@@ -335,6 +342,100 @@ body{
 
     color: #FFF;
 }
+
+// feedback
+.feedback {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "k l";
+    gap: 30px;
+    max-width: 1334px;
+    width: 100%;
+    margin: 91px auto;
+    padding: 0 20px;
+}
+.feedback__box-1 {
+    grid-area: k;
+    max-width: 583px;
+    width: 100%;
+}
+.feedback__text {
+    max-width: 505px;
+}
+.feedback__title {
+    color: #000;
+    font-size: 42px;
+    font-weight: 700;
+}
+.feedback__line{
+    width: 40px;
+    height: 1px;
+    background-color: var(--mainBlue);
+    margin: 25px auto 37px;
+    display: none;
+}
+.feedback_subtitle {
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34.182px;
+
+    margin-top: 23px;
+}
+.feedback__img{
+    max-width: 583px;
+    max-height: 296px;
+    width: 100%;
+   
+    margin-top: 63px;
+}
+.feedback__box-2 {
+    grid-area: l;
+    width: 100%;
+    max-width: 486px;
+    padding: 63px 45px 48px;
+    border: #969696 solid 1px;
+    border-top: var(--mainBlue) solid 10px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px -1px 8px 4px rgba(88, 83, 83, 0.12);
+}
+
+.feedback__ul {
+    display: grid;
+    gap: 27px;
+   
+    input{
+        width: 396px;
+        background: #F6F6F6;
+        padding: 20px 17px 20px;
+        color: var(--text);
+        border: var(--text) solid 1px;
+        border-radius: 5px;
+
+        font-size: 16px;
+        font-weight: 400;
+    }
+    textarea{
+        width: 396px;
+        min-height: 143px;
+
+        font-size: 19px;
+        font-weight: 400;
+    }
+}
+.feedback__boxBtn{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.send {
+    @include btn();
+    width: 238px;
+    height: 60px;
+}
+
 
 
 
